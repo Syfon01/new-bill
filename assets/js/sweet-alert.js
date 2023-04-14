@@ -1,4 +1,23 @@
 $(function(e) {
+
+
+	//Yinka, you can edit this to suit purpose.. Just make sure the id is same with the one here
+	$(document).on("click", "#click", function(e) {
+		$('body').removeClass('timer-alert');
+		var type = $("#type").val();
+		swal({
+			title: "Title",
+			text: "Your message",
+			type: type
+		});
+	});
+
+	//Yinka, this is the one I'm using
+	$(document).on("click", "#click", function(e) {
+		swal('Congratulations!', 'User created successfully', 'success');
+	});
+
+	
 	// Message
 	$(document).on("click", "#but1", function(e) {
 		$('body').removeClass('timer-alert');
@@ -57,16 +76,6 @@ $(function(e) {
 			showConfirmButton: false
 		});
 	});
-	//
-	$(document).on("click", "#click", function(e) {
-		$('body').removeClass('timer-alert');
-		var type = $("#type").val();
-		swal({
-			title: "Title",
-			text: "Your message",
-			type: type
-		});
-	});
 	// Prompt
 	$(document).on("click", "#prompt", function(e) {
 		$('body').removeClass('timer-alert');
@@ -95,9 +104,8 @@ $(function(e) {
 			cancelButtonText: 'Stay on the page'
 		});
 	});
-	$(document).on("click", "#click", function(e) {
-		swal('Congratulations!', 'Your message has been succesfully sent', 'success');
-	});
+
+
 	$(document).on("click", "#click1", function(e) {
 		$('body').removeClass('timer-alert');
 		swal({
