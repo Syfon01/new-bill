@@ -67,6 +67,12 @@ $(function(e) {
 		multidateSeparator: "-",
 	})
 
+	$('#datepicker-date2').bootstrapdatepicker({
+		format: "dd-mm-yyyy",
+		viewMode: "date",
+		multidate: true,
+		multidateSeparator: "-",
+	})
 	//_________Month picker
 	$('#datepicker-month').bootstrapdatepicker({
 		format: "MM",
