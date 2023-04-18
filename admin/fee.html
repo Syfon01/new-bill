@@ -287,7 +287,7 @@
                                         <i class="side-menu__icon fe fe-user"></i><span class="side-menu__label">Users</span></a>
                                 </li>
                                 <li class="slide">
-                                    <a class="side-menu__item active" data-bs-toggle="slide" href="./index.html">
+                                    <a class="side-menu__item" data-bs-toggle="slide" href="../merchant/index.html">
                                         <i class="side-menu__icon fe fe-grid"></i><span class="side-menu__label">Merchant</span></a>
                                 </li>
                                 <li class="slide">
@@ -295,7 +295,7 @@
                                         <i class="side-menu__icon fe fe-dollar-sign"></i><span class="side-menu__label">Billers</span></a>
                                 </li>
                                 <li class="slide">
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="../vas-channel/index.html">
+                                    <a class="side-menu__item" data-bs-toggle="slide" href="./index.html">
                                         <i class="side-menu__icon fe fe-sliders"></i><span class="side-menu__label">Vas Channels</span></a>
                                 </li>
                                 <li class="slide">
@@ -310,13 +310,12 @@
                                     <a class="side-menu__item" data-bs-toggle="slide" href="../log/index.html">
                                         <i class="side-menu__icon fe fe-layers"></i><span class="side-menu__label">Transactions log</span></a>
                                 </li>
-                                
-                                <li class="slide">
-                                  <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);">
+                                <li class="slide is-expanded">
+                                  <a class="side-menu__item active" data-bs-toggle="slide" href="javascript:void(0);">
                                       <i class="side-menu__icon fe fe-database"></i><span class="side-menu__label">Admin Module</span><i class="angle fa fa-angle-right"></i></a>
                                   <ul class="slide-menu">
                                       <li class="side-menu-label1"><a href="javascript:void(0)">Admin Module</a></li>
-                                      <li><a href="../admin/fee.html" class="slide-item">Fee Configuration</a></li>
+                                      <li><a href="../admin/fee.html" class="slide-item active">Fee Configuration</a></li>
                                       <li><a href="../admin/billers.html" class="slide-item">Account Configuration</a></li>
                                   </ul>
                               </li>
@@ -358,19 +357,19 @@
                             <!-- PAGE-HEADER -->
                             <div class="page-header">
                                 <div>
-                                    <h1 class="page-title">Merchants</h1>
+                                    <h1 class="page-title">Admin Module</h1>
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="javascript:void(0);">Merchants</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Home</li>
+                                        <li class="breadcrumb-item"><a href="javascript:void(0);">Admin Module</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Fee Configuration</li>
                                     </ol>
                                 </div>
                                 <div class="ms-auto pageheader-btn">
 
                                   <div class="btn-group mb-2">
-                                    <a href="./create-merchant.html" type="button" class="btn btn-primary">
+                                    <a href="./create-fee.html" type="button" class="btn btn-primary">
                                       <span>
                                         <i class="fe fe-plus"></i>
-                                    </span> Add Merchant
+                                    </span> Add Fee Configuration
                                     </a>
                                   </div>
 
@@ -389,140 +388,99 @@
                                                     <thead class="border-top">
                                                         <tr>
                                                             <th class="bg-transparent border-bottom-0 w-5">S.no</th>
-                                                            <th class="bg-transparent border-bottom-0">Merchant ID</th>
-                                                            <th class="bg-transparent border-bottom-0">Name</th>
-                                                            <th class="bg-transparent border-bottom-0">Merchant Code</th>
-                                                            <th class="bg-transparent border-bottom-0">Merchant Account</th>
-                                                            <th class="bg-transparent border-bottom-0">Service URL</th>
+                                                            <th class="bg-transparent border-bottom-0">Country</th>
+                                                            <th class="bg-transparent border-bottom-0">Provider</th>
+                                                            <th class="bg-transparent border-bottom-0">Fee Category</th>
+                                                            <th class="bg-transparent border-bottom-0">Fee Amount</th>
                                                             <th class="bg-transparent border-bottom-0">Action</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr class="border-bottom">
                                                             <td class="text-muted fs-14 pt-4 text-center">01.</td>
-                                                            <td class="fs-14 text-muted pt-4">
-                                                              002
-                                                            </td>
-                                                            <td class="text-muted fs-14 pt-4">Quickteller 1 </td>
-                                                            <td class="text-muted fs-14 pt-4">GH</td>
-                                                            <td class="text-muted fs-14 pt-4">100000QWQ8E</td>
-                                                            <td class="text-muted fs-14 pt-4">
-								                                                <a href="" class="text-muted">	http://172.20.238.46:7826/esb/ubagroup/quickteller/payment</a>
-                                                            </td>
+                                                            <td class="text-muted fs-14 pt-4">KEN</td>
+                                                            <td class="text-muted fs-14 pt-4">Elma </td>
+                                                            <td class="text-muted fs-14 pt-4">1</td>
+                                                            <td class="text-muted fs-14 pt-4">70</td>
                                                             <td class="">
-                                                                <a class="btn btn-info btn-sm rounded-11 me-2" href="./edit-merchant.html" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></a>
+                                                                <a class="btn btn-info btn-sm rounded-11 me-2" href="./create-fee.html" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></a>
                                                                 <a class="btn btn-primary  btn-sm rounded-11" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i><svg class="table-delete" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"/></svg></i></a>
                                                             </td>
                                                         </tr>
                                                         <tr class="border-bottom">
                                                             <td class="text-muted fs-14 pt-4 text-center">02.</td>
-                                                            <td class="mb-0 fs-14 text-muted pt-4">
-                                                              002
-                                                            </td>
-                                                            <td class="text-muted fs-14 pt-4">Quickteller 1 </td>
-                                                            <td class="text-muted fs-14 pt-4">GH</td>
-                                                            <td class="text-muted fs-14 pt-4">100000QWQ8E</td>
-                                                            <td class="text-muted fs-14 pt-4">
-								                                                <a href="" class="text-muted">	http://172.20.238.46:7826/esb/ubagroup/quickteller/payment</a>
-                                                            </td>
+                                                             <td class="text-muted fs-14 pt-4">KEN</td>
+                                                            <td class="text-muted fs-14 pt-4">Elma </td>
+                                                            <td class="text-muted fs-14 pt-4">1</td>
+                                                            <td class="text-muted fs-14 pt-4">70</td>
                                                             <td class="">
-                                                                <a class="btn btn-info btn-sm rounded-11 me-2" href="./edit-merchant.html" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></a>
+                                                                <a class="btn btn-info btn-sm rounded-11 me-2" href="./create-fee.html" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></a>
                                                                 <a class="btn btn-primary  btn-sm rounded-11" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i><svg class="table-delete" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"/></svg></i></a>
                                                             </td>
                                                         </tr>
                                                         <tr class="border-bottom">
                                                             <td class="text-muted fs-14 pt-4 text-center">03.</td>
-                                                            <td class="mb-0 fs-14 text-muted pt-4">
-                                                              002
-                                                            </td>
-                                                            <td class="text-muted fs-14 pt-4">Quickteller 1 </td>
-                                                            <td class="text-muted fs-14 pt-4">GH</td>
-                                                            <td class="text-muted fs-14 pt-4">100000QWQ8E</td>
-                                                            <td class="text-muted fs-14 pt-4">
-								                                                <a href="" class="text-muted">	http://172.20.238.46:7826/esb/ubagroup/quickteller/payment</a>
-                                                            </td>
+                                                             <td class="text-muted fs-14 pt-4">KEN</td>
+                                                            <td class="text-muted fs-14 pt-4">Elma </td>
+                                                            <td class="text-muted fs-14 pt-4">1</td>
+                                                            <td class="text-muted fs-14 pt-4">70</td>
                                                             <td class="">
-                                                                <a class="btn btn-info btn-sm rounded-11 me-2" href="./edit-merchant.html" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></a>
+                                                                <a class="btn btn-info btn-sm rounded-11 me-2" href="./create-fee.html" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></a>
                                                                 <a class="btn btn-primary  btn-sm rounded-11" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i><svg class="table-delete" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"/></svg></i></a>
                                                             </td>
                                                         </tr>
                                                         <tr class="border-bottom">
                                                             <td class="text-muted fs-14 pt-4 text-center">04.</td>
-                                                            <td class="mb-0 fs-14 text-muted pt-4">
-                                                              002
-                                                            </td>
-                                                            <td class="text-muted fs-14 pt-4">Quickteller 1 </td>
-                                                            <td class="text-muted fs-14 pt-4">GH</td>
-                                                            <td class="text-muted fs-14 pt-4">100000QWQ8E</td>
-                                                            <td class="text-muted fs-14 pt-4">
-								                                                <a href="" class="text-muted">	http://172.20.238.46:7826/esb/ubagroup/quickteller/payment</a>
-                                                            </td>
+                                                             <td class="text-muted fs-14 pt-4">KEN</td>
+                                                            <td class="text-muted fs-14 pt-4">Elma </td>
+                                                            <td class="text-muted fs-14 pt-4">1</td>
+                                                            <td class="text-muted fs-14 pt-4">70</td>
                                                             <td class="">
-                                                                <a class="btn btn-info btn-sm rounded-11 me-2" href="./edit-merchant.html" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></a>
+                                                                <a class="btn btn-info btn-sm rounded-11 me-2" href="./create-fee.html" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></a>
                                                                 <a class="btn btn-primary  btn-sm rounded-11" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i><svg class="table-delete" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"/></svg></i></a>
                                                             </td>
                                                         </tr>
                                                         <tr class="border-bottom">
                                                             <td class="text-muted fs-14 pt-4 text-center">05.</td>
-                                                            <td class="mb-0 fs-14 text-muted pt-4">
-                                                              002
-                                                            </td>
-                                                            <td class="text-muted fs-14 pt-4">Quickteller 1 </td>
-                                                            <td class="text-muted fs-14 pt-4">GH</td>
-                                                            <td class="text-muted fs-14 pt-4">100000QWQ8E</td>
-                                                            <td class="text-muted fs-14 pt-4">
-								                                                <a href="" class="text-muted">	http://172.20.238.46:7826/esb/ubagroup/quickteller/payment</a>
-                                                            </td>
+                                                             <td class="text-muted fs-14 pt-4">KEN</td>
+                                                            <td class="text-muted fs-14 pt-4">Elma </td>
+                                                            <td class="text-muted fs-14 pt-4">1</td>
+                                                            <td class="text-muted fs-14 pt-4">70</td>
                                                             <td class="">
-                                                                <a class="btn btn-info btn-sm rounded-11 me-2" href="./edit-merchant.html" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></a>
+                                                                <a class="btn btn-info btn-sm rounded-11 me-2" href="./create-fee.html" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></a>
                                                                 <a class="btn btn-primary  btn-sm rounded-11" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i><svg class="table-delete" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"/></svg></i></a>
                                                             </td>
                                                         </tr>
                                                         <tr class="border-bottom">
                                                             <td class="text-muted fs-14 pt-4 text-center">06.</td>
-                                                            <td class="mb-0 fs-14 text-muted pt-4">
-                                                              002
-                                                            </td>
-                                                            <td class="text-muted fs-14 pt-4">Quickteller 1 </td>
-                                                            <td class="text-muted fs-14 pt-4">GH</td>
-                                                            <td class="text-muted fs-14 pt-4">100000QWQ8E</td>
-                                                            <td class="text-muted fs-14 pt-4">
-								                                                <a href="" class="text-muted">	http://172.20.238.46:7826/esb/ubagroup/quickteller/payment</a>
-                                                            </td>
+                                                             <td class="text-muted fs-14 pt-4">KEN</td>
+                                                            <td class="text-muted fs-14 pt-4">Elma </td>
+                                                            <td class="text-muted fs-14 pt-4">1</td>
+                                                            <td class="text-muted fs-14 pt-4">70</td>
                                                             <td class="">
-                                                                <a class="btn btn-info btn-sm rounded-11 me-2" href="./edit-merchant.html" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></a>
+                                                                <a class="btn btn-info btn-sm rounded-11 me-2" href="./create-fee.html" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></a>
                                                                 <a class="btn btn-primary  btn-sm rounded-11" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i><svg class="table-delete" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"/></svg></i></a>
                                                             </td>
                                                         </tr>
                                                         <tr class="border-bottom">
                                                             <td class="text-muted fs-14 pt-4 text-center">07.</td>
-                                                            <td class="mb-0 fs-14 text-muted pt-4">
-                                                              002
-                                                            </td>
-                                                            <td class="text-muted fs-14 pt-4">Quickteller 1 </td>
-                                                            <td class="text-muted fs-14 pt-4">GH</td>
-                                                            <td class="text-muted fs-14 pt-4">100000QWQ8E</td>
-                                                            <td class="text-muted fs-14 pt-4">
-								                                                <a href="" class="text-muted">	http://172.20.238.46:7826/esb/ubagroup/quickteller/payment</a>
-                                                            </td>
+                                                             <td class="text-muted fs-14 pt-4">KEN</td>
+                                                            <td class="text-muted fs-14 pt-4">Elma </td>
+                                                            <td class="text-muted fs-14 pt-4">1</td>
+                                                            <td class="text-muted fs-14 pt-4">70</td>
                                                             <td class="">
-                                                                <a class="btn btn-info btn-sm rounded-11 me-2" href="./edit-merchant.html" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></a>
+                                                                <a class="btn btn-info btn-sm rounded-11 me-2" href="./create-fee.html" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></a>
                                                                 <a class="btn btn-primary  btn-sm rounded-11" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i><svg class="table-delete" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"/></svg></i></a>
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <td class="text-muted fs-14 pt-4 text-center">08.</td>
-                                                            <td class="mb-0 fs-14 text-muted pt-4">
-                                                              002
-                                                            </td>
-                                                            <td class="text-muted fs-14 pt-4">Quickteller 1 </td>
-                                                            <td class="text-muted fs-14 pt-4">GH</td>
-                                                            <td class="text-muted fs-14 pt-4">100000QWQ8E</td>
-                                                            <td class="text-muted fs-14 pt-4">
-								                                                <a href="" class="text-muted">	http://172.20.238.46:7826/esb/ubagroup/quickteller/payment</a>
-                                                            </td>
+                                                             <td class="text-muted fs-14 pt-4">KEN</td>
+                                                            <td class="text-muted fs-14 pt-4">Elma </td>
+                                                            <td class="text-muted fs-14 pt-4">1</td>
+                                                            <td class="text-muted fs-14 pt-4">70</td>
                                                             <td class="">
-                                                                <a class="btn btn-info btn-sm rounded-11 me-2" href="./edit-merchant.html" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></a>
+                                                                <a class="btn btn-info btn-sm rounded-11 me-2" href="./create-fee.html" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></a>
                                                                 <a class="btn btn-primary  btn-sm rounded-11" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i><svg class="table-delete" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"/></svg></i></a>
                                                             </td>
                                                         </tr>
