@@ -761,7 +761,7 @@
                                         <td class="text-muted fs-14 pt-4">Yes</td>
                                         
                                         <td class="">
-                                            <a class="btn btn-info btn-sm rounded-11 me-2" href="./edit-biller.html" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></a>
+                                          <button class="btn btn-info btn-sm rounded-11 me-2" data-bs-target="#editModal"  data-bs-effect="effect-slide-in-right" data-bs-toggle="modal" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></button>
                                             <a class="btn btn-primary  btn-sm rounded-11" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i><svg class="table-delete" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"/></svg></i></a>
                                         </td>
                                     </tr>
@@ -774,7 +774,7 @@
                                         <td class="text-muted fs-14 pt-4">No</td>
                                         
                                         <td class="">
-                                            <a class="btn btn-info btn-sm rounded-11 me-2" href="./edit-biller.html" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></a>
+                                            <button class="btn btn-info btn-sm rounded-11 me-2" data-bs-target="#editModal"  data-bs-effect="effect-slide-in-right" data-bs-toggle="modal" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></button>
                                             <a class="btn btn-primary  btn-sm rounded-11" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i><svg class="table-delete" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"/></svg></i></a>
                                         </td>
                                     </tr>
@@ -1874,13 +1874,13 @@
       <!--/Sidebar-right-->
 
       <!-- Modal -->
-      <div class="modal effect-slide-in-right" id="createfile">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal effect-slide-in-right" id="editModal">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
           <div class="modal-content modal-content-demo">
             <div class="modal-header">
-              <h6 class="modal-title">
-                Create a new user by uploading a.CSV file containing user
-                details
+              <h6 class="modal-title fs-16 fw-bold">
+                Edit Biller Fields
+
               </h6>
               <button
                 aria-label="Close"
@@ -1890,26 +1890,111 @@
               ></button>
             </div>
             <div class="modal-body">
-              <div>
-                <input
-                  id="demo"
-                  type="file"
-                  name="files"
-                  accept="image/jpeg, image/png, text/html, application/zip, text/css, text/js"
-                  multiple
-                />
+             
+            <div>
+              <div class="form-row">
+                <div class="form-group col-md-4 mb-0">
+                  <div class="form-group">
+                    <label for="firstname" class="form-label"
+                      >Field ID</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="firstName"
+                      placeholder="Enter Biller ID"
+                    />
+                  </div>
+                </div>
+                <div class="form-group col-md-4 mb-0">
+                  <div class="form-group">
+                    <label for="lastname" class="form-label"
+                      >Field Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lastName"
+                      placeholder="Enter Biller Name"
+                    />
+                  </div>
+                </div>
+                <div class="form-group col-md-4 mb-0">
+                  <div class="form-group">
+                    <label for="lastname" class="form-label"
+                      >Validation</label
+                    >
+                    <div class="form-row px-2 mt-3">
+                      <div class="col-4 col-lg-3">
+                        <label class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            name="example-radios"
+                            value="option1"
+                          />
+                          <span class="custom-control-label">Yes</span>
+                        </label>
+                      </div>
+                      <div class="col-4">
+                        <label class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            name="example-radios"
+                            value="option2"
+                          />
+                          <span class="custom-control-label">No</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-4 mb-0">
+                  <div class="form-group">
+                    <label class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        name="example-checkbox2"
+                        value="option2"
+                      />
+                      <span class="custom-control-label">Required</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group col-md-6 mb-0">
+                  <div class="form-group">
+                    <label class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        name="example-checkbox2"
+                        value="option2"
+                      />
+                      <span class="custom-control-label"
+                        >Add to Narration</span
+                      >
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
             </div>
             <div class="modal-footer">
               <button class="btn ripple btn-primary" type="button">
-                continue
+                Continue
               </button>
               <button
                 class="btn ripple btn-light"
                 data-bs-dismiss="modal"
                 type="button"
               >
-                cancel
+                Cancel
               </button>
             </div>
           </div>
