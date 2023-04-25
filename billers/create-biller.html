@@ -634,104 +634,159 @@
                     <label for="titleName" class="form-label fs-16"
                       >Biller Fields
                     </label>
-                    <div class="form-row">
-                      <div class="form-group col-md-4 mb-0">
-                        <div class="form-group">
-                          <label for="firstname" class="form-label"
-                            >Field ID</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="firstName"
-                            placeholder="Enter Biller ID"
-                          />
+                    <div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-4 mb-0">
+                          <div class="form-group">
+                            <label for="firstname" class="form-label"
+                              >Field ID</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="firstName"
+                              placeholder="Enter Biller ID"
+                            />
+                          </div>
                         </div>
-                      </div>
-                      <div class="form-group col-md-4 mb-0">
-                        <div class="form-group">
-                          <label for="lastname" class="form-label"
-                            >Field Name</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="lastName"
-                            placeholder="Enter Biller Name"
-                          />
+                        <div class="form-group col-md-4 mb-0">
+                          <div class="form-group">
+                            <label for="lastname" class="form-label"
+                              >Field Name</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="lastName"
+                              placeholder="Enter Biller Name"
+                            />
+                          </div>
                         </div>
-                      </div>
-                      <div class="form-group col-md-4 mb-0">
-                        <div class="form-group">
-                          <label for="lastname" class="form-label"
-                            >Validation</label
-                          >
-                          <div class="form-row px-2 mt-3">
-                            <div class="col-4 col-lg-3">
-                              <label class="custom-control custom-radio">
-                                <input
-                                  type="radio"
-                                  class="custom-control-input"
-                                  name="example-radios"
-                                  value="option1"
-                                />
-                                <span class="custom-control-label">Yes</span>
-                              </label>
-                            </div>
-                            <div class="col-4">
-                              <label class="custom-control custom-radio">
-                                <input
-                                  type="radio"
-                                  class="custom-control-input"
-                                  name="example-radios"
-                                  value="option2"
-                                />
-                                <span class="custom-control-label">No</span>
-                              </label>
+                        <div class="form-group col-md-4 mb-0">
+                          <div class="form-group">
+                            <label for="lastname" class="form-label"
+                              >Validation</label
+                            >
+                            <div class="form-row px-2 mt-3">
+                              <div class="col-4 col-lg-3">
+                                <label class="custom-control custom-radio">
+                                  <input
+                                    type="radio"
+                                    class="custom-control-input"
+                                    name="example-radios"
+                                    value="option1"
+                                  />
+                                  <span class="custom-control-label">Yes</span>
+                                </label>
+                              </div>
+                              <div class="col-4">
+                                <label class="custom-control custom-radio">
+                                  <input
+                                    type="radio"
+                                    class="custom-control-input"
+                                    name="example-radios"
+                                    value="option2"
+                                  />
+                                  <span class="custom-control-label">No</span>
+                                </label>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-
-                    <div class="form-row">
-                      <div class="form-group col-md-4 mb-0">
-                        <div class="form-group">
-                          <label class="custom-control custom-checkbox">
-                            <input
-                              type="checkbox"
-                              class="custom-control-input"
-                              name="example-checkbox2"
-                              value="option2"
-                            />
-                            <span class="custom-control-label">Required</span>
-                          </label>
+  
+                      <div class="form-row">
+                        <div class="form-group col-md-4 mb-0">
+                          <div class="form-group">
+                            <label class="custom-control custom-checkbox">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input"
+                                name="example-checkbox2"
+                                value="option2"
+                              />
+                              <span class="custom-control-label">Required</span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-6 mb-0">
+                          <div class="form-group">
+                            <label class="custom-control custom-checkbox">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input"
+                                name="example-checkbox2"
+                                value="option2"
+                              />
+                              <span class="custom-control-label"
+                                >Add to Narration</span
+                              >
+                            </label>
+                          </div>
                         </div>
                       </div>
-                      <div class="form-group col-md-6 mb-0">
-                        <div class="form-group">
-                          <label class="custom-control custom-checkbox">
-                            <input
-                              type="checkbox"
-                              class="custom-control-input"
-                              name="example-checkbox2"
-                              value="option2"
-                            />
-                            <span class="custom-control-label"
-                              >Add to Narration</span
-                            >
-                          </label>
+  
+                      <div class="d-flex justify-content-end">
+                        <div class="">
+                          <button class="btn btn-primary px-5 me-3">
+                            Save
+                          </button>
+                          <button class="btn btn-outline-primary px-3">
+                            Add Another Biller Fields
+                          </button>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="d-flex justify-content-end">
-                      <div class="">
-                        <button class="btn btn-outline-primary px-4">
-                          Add Another Biller Fields
-                        </button>
+                      <!-- table part  -->
+                      
+                      <div class="table-responsive export-table mt-4">
+                        <table id="file-datatable" class="table table-striped table-bordered text-nowrap key-buttons border-bottom  w-100">
+                                <thead class="border-top">
+                                    <tr>
+                                        <th class="bg-transparent border-bottom-0 w-5">S.no</th>
+                                        <th class="bg-transparent border-bottom-0">Field ID</th>
+                                        <th class="bg-transparent border-bottom-0">Field Name</th>
+                                        <th class="bg-transparent border-bottom-0">Validation</th>
+                                        <th class="bg-transparent border-bottom-0">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-bottom">
+                                        <td class="text-muted fs-14 pt-4 text-center">01.</td>
+                                        <td class="fs-14 text-muted pt-4">
+                                          002
+                                        </td>
+                                        <td class="text-muted fs-14 pt-4">BetName</td>
+                                        <td class="text-muted fs-14 pt-4">Yes</td>
+                                        
+                                        <td class="">
+                                            <a class="btn btn-info btn-sm rounded-11 me-2" href="./edit-biller.html" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></a>
+                                            <a class="btn btn-primary  btn-sm rounded-11" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i><svg class="table-delete" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"/></svg></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-bottom">
+                                        <td class="text-muted fs-14 pt-4 text-center">02.</td>
+                                        <td class="fs-14 text-muted pt-4">
+                                          002
+                                        </td>
+                                        <td class="text-muted fs-14 pt-4">BetName</td>
+                                        <td class="text-muted fs-14 pt-4">No</td>
+                                        
+                                        <td class="">
+                                            <a class="btn btn-info btn-sm rounded-11 me-2" href="./edit-biller.html" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i><svg class="table-edit" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z"/></svg></i></a>
+                                            <a class="btn btn-primary  btn-sm rounded-11" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i><svg class="table-delete" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"/></svg></i></a>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
                       </div>
+                        
+                      <!-- end of table  -->
                     </div>
+                    
+                   
                     <hr />
 
                     <div class="mt-4">
