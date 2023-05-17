@@ -1,5 +1,12 @@
 $(function(e) {
 
+	// keep modal 
+	$('#channelModal').modal({
+    backdrop: 'static',
+    keyboard: false
+})
+
+
 	//______Data-Table
 	$('#data-table').DataTable({
 		language: {

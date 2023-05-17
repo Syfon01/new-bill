@@ -17,7 +17,11 @@ $(function(e) {
 		swal('Congratulations!', 'User created successfully', 'success');
 	});
 
-	
+	//Yinka, this is the one I'm using for channel
+	$(document).on("click", "#channel", function(e) {
+		swal('Congratulations!', 'Channel config added successfully', 'success');
+	});
+
 	// Message
 	$(document).on("click", "#but1", function(e) {
 		$('body').removeClass('timer-alert');
