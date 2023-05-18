@@ -42561,7 +42561,7 @@ body.rtl {
 }
 
 .app-content {
-    margin-bottom: 0 !important;
+    margin-bottom: 2rem !important;
     -webkit-transition: margin-left 0.2s ease;
     -o-transition: margin-left 0.2s ease;
     transition: margin-left 0.2s ease;
