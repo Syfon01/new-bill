@@ -58450,4 +58450,9 @@ html [type=button],
     display: none;
 }
 
+.form-footer .float-md-end{
+    margin-top:1rem!important;
+    margin-bottom:1.2rem!important;
+  }
+
 /*# sourceMappingURL=style.css.map */
