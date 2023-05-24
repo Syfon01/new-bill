@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <label>
+    <input type="checkbox" id="myCheckbox" onchange="handleCheckboxChange()" />
+    Checkbox
+  </label>
+  
+  <select id="mySelect">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+  </select>
+
+  <script>
+    function handleCheckboxChange() {
+      var checkbox = document.getElementById("myCheckbox");
+      var select = document.getElementById("mySelect");
+
+      if (!checkbox.checked) {
+        // Clear the selected options
+        select.selectedIndex = -1;
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
